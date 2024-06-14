@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Perfume",
+    "desc": "Miguel Rousseouf",
+    "value": "100.00",
+    "categoria": "perfumao hard",
+    "status": true,
+    "image": "https://img.irroba.com.br/fit-in/600x600/filters:fill(fff):quality(80)/volarium/catalog/produtos/volarium/perfume/perfume-feminino/perfume-feminino-ch-tradicional-importado-original.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Colar",
+    "desc": "Jand Karno em perolas",
+    "value": "2200.00",
+    "categoria": "perfumao hard",
+    "status": false,
+    "image": "https://cdn.awsli.com.br/600x450/1537/1537341/produto/152389745/01e29e7fcc.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Doctor Goodwin",
+    "desc": "Jand Karno em perolas",
+    "value": "2200.00",
+    "categoria": "perfumao hard",
+    "status": true,
+    "image": "src/images/olidoc.png"
+  },
+  {
+    "id": 4,
+    "name": "Watermelon Lime",
+    "desc": "Jand Karno em perolas",
+    "value": "25.00",
+    "categoria": "perfumao hard",
+    "status": true,
+    "image": "src/images/oliwater.png"
+  },
+  {
+    "id": 5,
+    "name": "Cherry Vanilla",
+    "desc": "Jand Karno em perolas",
+    "value": "2200.00",
+    "categoria": "perfumao hard",
+    "status": true,
+    "image": "src/images/oliche.png"
+  },
+  {
+    "id": 6,
+    "name": "Ginger Lemon",
+    "desc": "Jand Karno em perolas",
+    "value": "25.00",
+    "categoria": "perfumao hard",
+    "status": true,
+    "image": "src/images/oligin.png"
+  }
+]
