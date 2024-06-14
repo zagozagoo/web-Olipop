@@ -4,7 +4,16 @@ import produtos from './constants/produtos.json'
 import { api } from "./api/rmApi"
 import style from './App.module.css'
 
+import 'leaflet/dist/leaflet.css';
+
+import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
+
+import "leaflet-defaulticon-compatibility"; //tem que dar npm i leaflet-defaulticon-compatibility
+
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+
 function App() {
+  const position = [-25.42474811725821, -49.27225551560059]
   const [show, setShow] = useState("")
   const [data, setData] = useState([])
   const [page, setPage] = useState("")
@@ -84,12 +93,21 @@ function App() {
             </div>
           </>
         }
+
         {show === "map" &&
           <>
             <h2>Mapa</h2>
-            <div>
-              mapa aqui
-            </div>
+            <MapContainer style={{height: 800}} center={position} zoom={13} scrollWheelZoom={true}>
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker position={position}>
+                <Popup>
+                  A pretty CSS3 popup. <br /> Easily customizable.
+                </Popup>
+              </Marker>
+            </MapContainer>
           </>
         }
       </div>
