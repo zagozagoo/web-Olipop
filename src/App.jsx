@@ -4,6 +4,7 @@ import produtos from './constants/produtos.json'
 import { api } from "./api/rmApi"
 import style from './App.module.css'
 
+
 import 'leaflet/dist/leaflet.css';
 
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
