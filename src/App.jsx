@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Card, CardProduto } from './components/Card'
+import Graph from './components/Graph';
 import produtos from './constants/produtos.json'
 import { api } from "./api/rmApi"
 import style from './App.module.css'
@@ -59,6 +60,7 @@ function App() {
         <button onClick={() => setShow("prod")}>Produtos</button>
         <button onClick={() => setShow("api")}>API</button>
         <button onClick={() => setShow("map")}>Mapa</button>
+        <button onClick={() => setShow("graph")}>Graficos</button>
       </div>
       <div>
         <h1>Exercícios de manutenção</h1>
@@ -109,6 +111,12 @@ function App() {
                 </Popup>
               </Marker>
             </MapContainer>
+          </>
+        }
+        {show === "graph" &&
+          <>
+            <h2>Gráficos</h2>
+            <Graph />
           </>
         }
       </div>
